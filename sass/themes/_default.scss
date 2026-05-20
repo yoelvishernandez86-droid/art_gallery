@@ -1,7 +1,10 @@
 @use "../abstracts/abstracts" as *;
 
 html * {
-  font-family: $poppins-font;
+  font-family: $big_shoulders-font;
+  p {
+    font-family: $outfit-font;
+  }
 }
 
 body {

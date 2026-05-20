@@ -1,1 +1,49 @@
 @use "../abstracts/mixins" as *;
+@use "../themes/colors" as *;
+h1 {
+  font-weight: 900;
+  font-size: 96px;
+  line-height: 88px;
+  letter-spacing: 0;
+  text-transform: uppercase;
+  color: $black;
+}
+h2 {
+  font-weight: 900;
+  font-size: 70px;
+  line-height: 70px;
+  letter-spacing: 0;
+  text-transform: uppercase;
+  color: $black;
+}
+h3 {
+  font-weight: 900;
+  font-size: 60px;
+  line-height: 60px;
+  letter-spacing: 0;
+  text-transform: uppercase;
+  color: $black;
+}
+h4 {
+  font-weight: 900;
+  font-size: 36px;
+  line-height: 36px;
+  letter-spacing: 0;
+  text-transform: uppercase;
+  color: $black;
+}
+p {
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 32px;
+  letter-spacing: 0;
+  color: $grey;
+}
+a {
+  font-size: 20px;
+  font-weight: 800;
+  line-height: 100%;
+  letter-spacing: 3.64px;
+  color: $white;
+  text-transform: uppercase;
+}
