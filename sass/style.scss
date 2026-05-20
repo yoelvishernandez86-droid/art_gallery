@@ -9,59 +9,9 @@
 @use "./themes/colors" as *;
 
 //tipografias
-h1 {
-  @include typography-h1;
-}
-h2 {
-  @include typography-h2;
-}
-h3 {
-  @include typography-h3;
-}
 
-p {
-  @include typography-p-regular;
-}
-.hero_content p,
-.cards p {
-  @include typography-p-hero;
-}
-a {
-  @include typography-a;
-}
 //botones
-.button {
-  @include button;
-}
+
 //colores de fondo
-.page {
-  background: linear-gradient(to right, $grey 60%, $cian 40%);
-  height: 800px;
-}
+
 //imagen de fondo
-section.hero {
-  background-image: url("../assets/beauty-woman-skin-care-beautiful-female-hand-touch-8B5MWG9-1.png");
-  height: 960px;
-  background-size: 85%;
-  background-repeat: no-repeat;
-  background-position: 110% -15%;
-}
-//video
-.video::before {
-  content: url(../assets/Play.svg);
-  background-color: white;
-  display: inline-flex;
-  border-radius: 100%;
-  padding: 5px;
-  justify-content: center;
-  align-items: center;
-}
-.video {
-  display: inline-flex;
-  justify-content: center;
-  align-items: center;
-  transition: transform 0.2s ease;
-  &:hover {
-    transform: scale(1.1);
-  }
-}
