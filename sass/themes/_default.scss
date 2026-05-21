@@ -4,9 +4,12 @@ html * {
   font-family: $big_shoulders-font;
   p {
     font-family: $outfit-font;
+    margin: 8% 0px;
   }
 }
-
+section {
+  padding-top: 40%;
+}
 body {
   overflow-x: hidden;
 }

@@ -1,0 +1,28 @@
+@use "../themes/colors" as *;
+.gallery {
+  display: flex;
+  flex-direction: column;
+  .inspired {
+    background-color: $black;
+    padding: 48px 0px 10px 24px;
+    h2 {
+      color: $white;
+    }
+    p {
+      color: $white;
+      max-width: 80%;
+    }
+  }
+  img {
+    margin-bottom: 10%;
+  }
+  * {
+    order: 0;
+  }
+  .your_day {
+    order: -1;
+  }
+  .gallery_image {
+    order: -2;
+  }
+}

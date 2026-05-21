@@ -8,10 +8,15 @@
 @use "settings";
 @use "./themes/colors" as *;
 
-//tipografias
-
-//botones
-
-//colores de fondo
-
-//imagen de fondo
+.page {
+  background-image: url(../assets/hero_image.png);
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: 100%;
+}
+.page_location {
+  background-image: url(../assets/Maps.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: top;
+}

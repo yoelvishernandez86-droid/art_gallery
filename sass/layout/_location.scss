@@ -1,0 +1,19 @@
+@use "../themes/colors" as *;
+.our_location {
+  margin-top: 130%;
+  background-color: $black;
+  padding: 48px 16px;
+  * {
+    color: $white;
+  }
+  .king {
+    color: $orange;
+    margin-top: 50px;
+  }
+  p {
+    margin: 0;
+  }
+  div.direction {
+    margin: 50px 0px;
+  }
+}
