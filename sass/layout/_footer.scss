@@ -1,5 +1,5 @@
 @use "../themes/colors" as *;
-
+@use "../abstracts/mixins" as *;
 .footer_1 {
   margin-top: 20%;
   background-color: $black;
@@ -10,11 +10,50 @@
   h4 {
     max-width: 60%;
   }
+  @include breakpoint(tablet) {
+    display: flex;
+    gap: 30px;
+    p {
+      max-width: 50%;
+      margin: 0;
+    }
+    h4 {
+      max-width: 30%;
+    }
+    .footer_social {
+      display: flex;
+      gap: 10px;
+      align-self: flex-start;
+      img {
+        width: 20px;
+      }
+    }
+  }
 }
 .footer_2 {
   background-color: $orange;
   padding: 48px 24px 48px 24px;
   h4 {
     max-width: 60%;
+  }
+  @include breakpoint(tablet) {
+    display: flex;
+    gap: 30px;
+    padding: 50px;
+    p {
+      max-width: 50%;
+      margin: 0;
+    }
+    h4 {
+      max-width: 30%;
+    }
+    .footer_social {
+      display: flex;
+      gap: 10px;
+      align-self: flex-start;
+      img {
+        width: 20px;
+      }
+    }
   }
 }

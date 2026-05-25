@@ -14,6 +14,13 @@
   background-position: top;
   background-size: 100%;
 }
+@include breakpoint(tablet) {
+  .page {
+    background-image: url(../assets/hero_image_tablet.png);
+    background-size: 60%;
+    background-position: top left;
+  }
+}
 .page_location {
   background-image: url(../assets/Maps.png);
   background-repeat: no-repeat;

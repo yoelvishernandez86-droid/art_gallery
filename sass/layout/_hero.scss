@@ -1,3 +1,16 @@
+@use "../abstracts/mixins" as *;
+@use "../base/typography" as *;
 .hero {
   padding-top: 80%;
+}
+@include breakpoint(tablet) {
+  .hero {
+    padding: 0px;
+    display: flex;
+    justify-content: end;
+    padding-top: 25%;
+    .hero_presentation {
+      max-width: 50%;
+    }
+  }
 }
