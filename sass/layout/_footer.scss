@@ -29,6 +29,26 @@
       }
     }
   }
+  @include breakpoint(desktop) {
+    display: flex;
+    gap: 30px;
+    padding: 10%;
+    p {
+      max-width: 50%;
+      margin: 0;
+    }
+    h4 {
+      max-width: 30%;
+    }
+    .footer_social {
+      display: flex;
+      gap: 10px;
+      align-self: flex-start;
+      img {
+        width: 20px;
+      }
+    }
+  }
 }
 .footer_2 {
   background-color: $orange;
@@ -40,6 +60,26 @@
     display: flex;
     gap: 30px;
     padding: 50px;
+    p {
+      max-width: 50%;
+      margin: 0;
+    }
+    h4 {
+      max-width: 30%;
+    }
+    .footer_social {
+      display: flex;
+      gap: 10px;
+      align-self: flex-start;
+      img {
+        width: 20px;
+      }
+    }
+  }
+  @include breakpoint(desktop) {
+    display: flex;
+    gap: 50px;
+    padding: 10%;
     p {
       max-width: 50%;
       margin: 0;

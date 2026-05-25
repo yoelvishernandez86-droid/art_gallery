@@ -21,9 +21,35 @@
     background-position: top left;
   }
 }
+@include breakpoint(desktop) {
+  .page {
+    background-image: url(../assets/hero_image_tablet.png);
+    background-size: 41.1%;
+    background-position: top;
+  }
+  .hero::before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 50%;
+    height: 100%;
+    background-color: $black;
+    z-index: -1;
+    top: 0;
+    left: 0;
+  }
+}
 .page_location {
   background-image: url(../assets/Maps.png);
   background-repeat: no-repeat;
   background-size: 100%;
   background-position: top;
+}
+@include breakpoint(desktop) {
+  .page_location {
+    background-image: url(../assets/Maps_desktop.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: top;
+  }
 }
