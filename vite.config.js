@@ -2,7 +2,7 @@ import { resolve } from "node:path";
 import { defineConfig } from "vite";
 
 export default defineConfig({
-  base: "/spa_and_beauty/",
+  base: "/Modern_art_gallery/",
   build: {
     rollupOptions: {
       input: {
