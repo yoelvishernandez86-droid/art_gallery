@@ -24,7 +24,7 @@
 @include breakpoint(desktop) {
   .page {
     background-image: url(../assets/hero_image_tablet.png);
-    background-size: 41.1%;
+    background-size: 50%;
     background-position: top;
   }
   .hero::before {
