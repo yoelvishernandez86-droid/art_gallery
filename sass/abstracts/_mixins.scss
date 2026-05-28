@@ -9,25 +9,13 @@
   }
 
   @if $bp == tablet {
-    @media (min-width: $bp-mobile) and (max-width: $bp-desktop) {
-      @content;
-    }
-  }
-
-  @if $bp == tablethorizontal {
-    @media (min-width: $bp-tablet-horizontal) {
+    @media (min-width: $bp-mobile) and (max-width: $bp-tablet-max) {
       @content;
     }
   }
 
   @if $bp == desktop {
     @media (min-width: $bp-desktop) {
-      @content;
-    }
-  }
-
-  @if $bp == desktopxl {
-    @media (min-width: $bp-desktop-xl) {
       @content;
     }
   }
