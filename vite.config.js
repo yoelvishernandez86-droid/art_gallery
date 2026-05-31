@@ -1,17 +1,11 @@
 import { defineConfig } from "vite";
-import { resolve, dirname } from "path";
-import { fileURLToPath } from "url";
-
-const __filename = fileURLToPath(import.meta.url);
-const __dirname = dirname(__filename);
 
 export default defineConfig({
-  base: "./",
-  build: {
-    rollupOptions: {
-      input: {
-        main: resolve(__dirname, "index.html"),
-        location: resolve(__dirname, "location.html"),
+  base: "/spa_and_beauty/",
+  css: {
+    preprocessorOptions: {
+      scss: {
+        api: "modern-compiler",
       },
     },
   },
