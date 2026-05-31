@@ -1,21 +1,20 @@
-import { resolve } from "node:path";
-import { defineConfig } from "vite";
+import { defineConfig } from 'vite';
+export default defineConfig({base: './',});
+import { defineConfig } from 'vite';
+import { resolve, dirname } from 'path';
+import { fileURLToPath } from 'url';
+
+const filename = fileURLToPath(import.meta.url);
+const dirname = dirname(filename);
 
 export default defineConfig({
-  base: "/art_gallery/",
+  base: './',
   build: {
     rollupOptions: {
       input: {
-        main: resolve(__dirname, "index.html"),
-        location: resolve(__dirname, "location.html"),
-      },
-    },
-  },
-  css: {
-    preprocessorOptions: {
-      scss: {
-        api: "modern-compiler",
-      },
-    },
-  },
-});
+        main: resolve(dirname, 'index.html'),
+        location: resolve(__dirname, 'location.html')
+      }
+    }
+  }
+}); 
